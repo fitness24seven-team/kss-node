@@ -1025,7 +1025,7 @@ class KssBuilderBase {
               // If this section doesn't have a "kss-example" template, we will
               // be re-using this template for the rendered examples.
               if (!templateInfo.exampleName) {
-                exampleTask = Promise.resolve(template);
+                return exampleTask = Promise.resolve(template);
               }
             });
           }
